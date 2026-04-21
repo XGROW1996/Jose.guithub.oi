@@ -9,17 +9,17 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background: #f4f4f4;
   color: #111;
 }
 
-.header {
+.topbar {
   background: #c40000;
   color: #fff;
-  padding: 15px;
   text-align: center;
+  padding: 10px;
+  font-size: 14px;
   font-weight: bold;
-  font-size: 18px;
 }
 
 .container {
@@ -33,15 +33,17 @@ h1 {
   font-size: 28px;
 }
 
-h2 {
-  font-size: 18px;
-  color: #555;
+.sub {
+  color: #666;
+  margin-bottom: 10px;
 }
 
-.author {
-  font-size: 13px;
-  color: #888;
-  margin-bottom: 15px;
+.counter {
+  background: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 10px;
+  font-size: 14px;
+  margin: 15px 0;
 }
 
 img {
@@ -49,7 +51,7 @@ img {
   margin: 15px 0;
 }
 
-.button {
+.cta {
   display: block;
   text-align: center;
   background: #ff0000;
@@ -62,16 +64,14 @@ img {
   font-weight: bold;
 }
 
-.warning {
-  font-size: 12px;
-  color: #777;
-  margin-top: 15px;
+.trust {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #555;
 }
 
-.comment-box {
+.comments {
   margin-top: 30px;
-  border-top: 1px solid #ddd;
-  padding-top: 20px;
 }
 
 .comment {
@@ -81,96 +81,98 @@ img {
 .name {
   font-weight: bold;
 }
-
-.cookie {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: #111;
-  color: #fff;
-  padding: 10px;
-  font-size: 12px;
-  text-align: center;
-}
 </style>
 
 </head>
 
 <body>
 
-<div class="header">
-BREAKING HEALTH NEWS
+<div class="topbar">
+HEALTH REPORT • UPDATED TODAY
 </div>
 
 <div class="container">
 
-<h1>Doctors Shocked: This "Simple Habit" May Be Destroying Your Blood Sugar Levels</h1>
+<h1>New Study Reveals Hidden Cause of Blood Sugar Spikes</h1>
 
-<h2>Millions of Americans may be affected without even realizing it...</h2>
-
-<div class="author">
-By Health Reporter | Updated Today
+<div class="sub">
+Researchers say most people overlook this daily habit...
 </div>
 
-<img src="https://i.imgur.com/8Km9tLL.png" style="filter: blur(8px);">
+<div class="counter">
+👁️ <span id="views">142</span> people are currently reading this report
+</div>
+
+<img src="https://i.imgur.com/8Km9tLL.png" style="filter: blur(6px);">
 
 <p>
-For years, people believed blood sugar issues were caused only by sugar intake...
+Many believe blood sugar problems are only caused by sugar intake...
 </p>
 
 <p>
-But recent findings reveal something far more dangerous — a hidden imbalance in how your body processes glucose.
+But new research suggests the real issue is how your body handles glucose and insulin.
 </p>
 
 <p>
-This condition has been linked to:
+Common symptoms include:
 </p>
 
 <p>
-• Constant fatigue<br>
-• Sudden weight gain<br>
+• Low energy<br>
 • Sugar cravings<br>
-• Mental fog
+• Weight gain<br>
+• Brain fog
 </p>
 
 <p>
-Health experts are now recommending a natural method that is helping thousands regain control.
+Experts are now highlighting a natural approach that may support healthy glucose levels.
 </p>
 
-<a href="https://bloodsugarblaster.com/index-vsl-ds24#aff=Josesilva0021" class="button">
-▶ Watch The Full Report Now
+<a href="https://bloodsugarblaster.com/index-vsl-ds24#aff=Josesilva0021" class="cta">
+▶ Watch Full Explanation
 </a>
 
-<p class="warning">
-Limited availability. This report may be taken down at any time.
-</p>
-
-<div class="comment-box">
-
-<h3>Comments</h3>
-
-<div class="comment">
-<span class="name">Jessica M.</span><br>
-"I tried this and my energy came back in days!"
+<div class="trust">
+✔ Based on recent health discussions<br>
+✔ Popular among adults over 35
 </div>
 
+<div class="comments">
+
+<h3>Recent feedback</h3>
+
 <div class="comment">
-<span class="name">Robert K.</span><br>
-"My sugar levels are finally under control."
+<span class="name">Michael R.</span><br>
+"I started paying attention to this and noticed improvements."
 </div>
 
 <div class="comment">
-<span class="name">Linda S.</span><br>
-"I wish I found this earlier!"
+<span class="name">Sandra L.</span><br>
+"Very interesting explanation, worth watching."
 </div>
 
 </div>
 
 </div>
 
-<div class="cookie">
-This site uses cookies to improve your experience.
-</div>
+<script>
+let views = 142;
+
+setInterval(() => {
+  let variation = Math.floor(Math.random() * 4);
+
+  if (Math.random() > 0.5) {
+    views += variation;
+  } else {
+    views -= variation;
+  }
+
+  if (views < 120) views = 120;
+  if (views > 200) views = 200;
+
+  document.getElementById("views").innerText = views;
+}, 4000);
+</script>
 
 </body>
 </html>
