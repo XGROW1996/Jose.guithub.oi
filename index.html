@@ -3,65 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blood Sugar Alert</title>
+<title>Health News Report</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #000;
+  background-color: #f4f4f4;
+  color: #111;
+}
+
+.header {
+  background: #c40000;
   color: #fff;
+  padding: 15px;
   text-align: center;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .container {
   max-width: 700px;
-  margin: auto;
+  background: #fff;
+  margin: 20px auto;
   padding: 20px;
 }
 
 h1 {
-  font-size: 26px;
-  margin-bottom: 10px;
+  font-size: 28px;
 }
 
 h2 {
   font-size: 18px;
-  color: #ccc;
+  color: #555;
 }
 
-.blur-img {
+.author {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+img {
   width: 100%;
-  filter: blur(10px);
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .button {
   display: block;
-  background-color: #ff0000;
+  text-align: center;
+  background: #ff0000;
   color: #fff;
-  text-decoration: none;
   padding: 18px;
   font-size: 20px;
+  text-decoration: none;
   border-radius: 6px;
   margin-top: 20px;
   font-weight: bold;
-  animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-  0% {opacity: 1;}
-  50% {opacity: 0.7;}
-  100% {opacity: 1;}
 }
 
 .warning {
-  font-size: 13px;
-  color: #aaa;
-  margin-top: 20px;
+  font-size: 12px;
+  color: #777;
+  margin-top: 15px;
 }
 
-.cookie-box {
+.comment-box {
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.comment {
+  margin-bottom: 15px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.cookie {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -69,60 +90,87 @@ h2 {
   color: #fff;
   padding: 10px;
   font-size: 12px;
-}
-
-.cookie-box button {
-  background: #28a745;
-  border: none;
-  color: #fff;
-  padding: 6px 10px;
+  text-align: center;
 }
 </style>
+
 </head>
 
 <body>
 
+<div class="header">
+BREAKING HEALTH NEWS
+</div>
+
 <div class="container">
 
-<h1>WARNING: Your Blood Sugar Might Be Out of Control...</h1>
+<h1>Doctors Shocked: This "Simple Habit" May Be Destroying Your Blood Sugar Levels</h1>
 
-<h2>This hidden issue could be draining your energy every single day</h2>
+<h2>Millions of Americans may be affected without even realizing it...</h2>
 
-<img src="https://i.imgur.com/8Km9tLL.png" class="blur-img">
+<div class="author">
+By Health Reporter | Updated Today
+</div>
 
-<p>Most people believe blood sugar problems come only from sugar...</p>
+<img src="https://i.imgur.com/8Km9tLL.png" style="filter: blur(8px);">
 
-<p>But the truth is much deeper — it's about how your body processes glucose.</p>
+<p>
+For years, people believed blood sugar issues were caused only by sugar intake...
+</p>
 
-<p>This may lead to:</p>
+<p>
+But recent findings reveal something far more dangerous — a hidden imbalance in how your body processes glucose.
+</p>
+
+<p>
+This condition has been linked to:
+</p>
 
 <p>
 • Constant fatigue<br>
+• Sudden weight gain<br>
 • Sugar cravings<br>
-• Weight gain<br>
-• Brain fog
+• Mental fog
+</p>
+
+<p>
+Health experts are now recommending a natural method that is helping thousands regain control.
 </p>
 
 <a href="https://bloodsugarblaster.com/index-vsl-ds24#aff=Josesilva0021" class="button">
-▶ Watch The Full Video Now
+▶ Watch The Full Report Now
 </a>
 
 <p class="warning">
-Due to high demand, this may not be available later.
+Limited availability. This report may be taken down at any time.
 </p>
 
+<div class="comment-box">
+
+<h3>Comments</h3>
+
+<div class="comment">
+<span class="name">Jessica M.</span><br>
+"I tried this and my energy came back in days!"
 </div>
 
-<div class="cookie-box" id="cookieBox">
+<div class="comment">
+<span class="name">Robert K.</span><br>
+"My sugar levels are finally under control."
+</div>
+
+<div class="comment">
+<span class="name">Linda S.</span><br>
+"I wish I found this earlier!"
+</div>
+
+</div>
+
+</div>
+
+<div class="cookie">
 This site uses cookies to improve your experience.
-<button onclick="acceptCookies()">Accept</button>
 </div>
-
-<script>
-function acceptCookies() {
-  document.getElementById("cookieBox").style.display = "none";
-}
-</script>
 
 </body>
 </html>
