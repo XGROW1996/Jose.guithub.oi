@@ -11,7 +11,6 @@
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-
 gtag('config', 'AW-393287826');
 </script>
 
@@ -72,4 +71,131 @@ img {
   text-decoration: none;
   border-radius: 6px;
   margin-top: 20px;
-  font
+  font-weight: bold;
+}
+
+.trust {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #555;
+}
+
+.comments {
+  margin-top: 30px;
+}
+
+.comment {
+  margin-bottom: 15px;
+}
+
+.name {
+  font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="topbar">
+HEALTH REPORT • UPDATED TODAY
+</div>
+
+<div class="container">
+
+<h1>New Study Reveals Hidden Cause of Blood Sugar Spikes</h1>
+
+<div class="sub">
+Researchers say most people overlook this daily habit...
+</div>
+
+<div class="counter">
+👁️ <span id="views">142</span> people are currently reading this report
+</div>
+
+<img src="hospital.png">
+
+<p>
+Many believe blood sugar problems are only caused by sugar intake...
+</p>
+
+<p>
+But new research suggests the real issue is how your body handles glucose and insulin.
+</p>
+
+<p>
+Common symptoms include:
+</p>
+
+<p>
+• Low energy<br>
+• Sugar cravings<br>
+• Weight gain<br>
+• Brain fog
+</p>
+
+<h2>See What Happens Inside Your Body...</h2>
+
+<img src="body.png">
+
+<p>
+This is what most people ignore... until it's too late.
+</p>
+
+<p>
+Experts are now highlighting a natural approach that may support healthy glucose levels.
+</p>
+
+<!-- 🔥 BOTÃO COM CONVERSÃO -->
+<a href="https://bloodsugarblaster.com/index-vsl-ds24#aff=Josesilva0021"
+class="cta"
+onclick="gtag('event', 'conversion', {
+  'send_to': 'AW-393287826/IR9TCN7EnqAcEJKxxLsB'
+});">
+▶ Watch Full Explanation
+</a>
+
+<div class="trust">
+✔ Based on recent health discussions<br>
+✔ Popular among adults over 35
+</div>
+
+<div class="comments">
+
+<h3>Recent feedback</h3>
+
+<div class="comment">
+<span class="name">Michael R.</span><br>
+"I started paying attention to this and noticed improvements."
+</div>
+
+<div class="comment">
+<span class="name">Sandra L.</span><br>
+"Very interesting explanation, worth watching."
+</div>
+
+</div>
+
+</div>
+
+<script>
+let views = 142;
+
+setInterval(() => {
+  let variation = Math.floor(Math.random() * 4);
+
+  if (Math.random() > 0.5) {
+    views += variation;
+  } else {
+    views -= variation;
+  }
+
+  if (views < 120) views = 120;
+  if (views > 200) views = 200;
+
+  document.getElementById("views").innerText = views;
+}, 4000);
+</script>
+
+</body>
+</html>
